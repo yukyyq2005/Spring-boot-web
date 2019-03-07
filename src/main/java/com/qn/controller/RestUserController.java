@@ -44,7 +44,7 @@ public class RestUserController {
 //		String str4 = " -pass 1 -passlogfile ffmpeg2pass -codec:v libx264 -sc_threshold 0 -bf 0 -b_strategy 0 -r 20 ";
 //		String str5 = " -profile:v high -preset:v fast -tune:v zerolatency ";
 //		String str6 = " -f flv \"rtmp://192.168.1.133:1935/live/push\" ";
-		pushManager.startPush();
+		//pushManager.startPush();
 
 		return userList;
 	}

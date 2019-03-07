@@ -16,11 +16,23 @@ import java.io.InputStreamReader;
 @Service
 public class PushManagerImpl implements PushManager {
 
+    /**
+     * @Desc: 开始运行shell脚本推流
+     * @param: [cmd]
+     * @return: void
+     * @date: 2019/3/7 下午5:41
+     */
     @Override
-    public void startPush() {
-        runCmd("/usr/local/youq/ffmpeg/start.sh");
+    public void startPush(String cmd) {
+        runCmd(cmd);
+//        runCmd("/usr/local/youq/ffmpeg/start.sh");
     }
-
+    /**
+     * @Desc: 运行shell命令
+     * @param: [command]
+     * @return: void
+     * @date: 2019/3/7 下午5:22
+     */
     private void runCmd(String command) {
         //String cmd = "/home/ty/t.sh";//这里必须要给文件赋权限 chmod u+x fileName;
         try {
